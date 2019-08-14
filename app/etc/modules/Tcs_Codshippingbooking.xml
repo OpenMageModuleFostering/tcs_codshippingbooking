@@ -25,7 +25,7 @@
     <Tcs_Codshippingbooking>
       <active>true</active>
       <codePool>community</codePool>
-      <version>0.0.1</version>
+      <version>0.0.6</version>
     </Tcs_Codshippingbooking>
   </modules>
 </config>
