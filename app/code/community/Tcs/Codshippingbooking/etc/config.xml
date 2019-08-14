@@ -13,17 +13,17 @@
  * obtain it through the world-wide-web, please send an email
  * to license@refersion.com so we can send you a copy immediately.
  *
- * @category   UBERCX
- * @package    Ubercx_Shippingtracking
- * @copyright  Copyright (c) 2015 Ubercx, Inc.
- * @author	   Ubercx Developer <ubercx_nospam@jframeworks.com>
+ * @category   TCS
+ * @package    Tcs_Codshippingbooking
+ * @copyright  Copyright (c) 2015 TCS (Pvt) Ltd.
+ * @author	   TCS Developer <kamran.haider@tcs-e.com>
  * @license    http://opensource.org/licenses/gpl-license GNU General Public License
  */
 -->
 <config>
   <modules>
     <Tcs_Codshippingbooking>
-      <version>0.0.1</version>
+      <version>0.0.2</version>
     </Tcs_Codshippingbooking>
   </modules>
   <global>
@@ -41,37 +41,8 @@
 			<codshippingbooking>
 				<class>Tcs_Codshippingbooking_Block</class>
 			</codshippingbooking>
-			<!--sales>
-				<rewrite>
-					<order_view>Ubercx_Shippingtracking_Block_Order_View</order_view>
-				  <order_shipment_items>Ubercx_Shippingtracking_Block_Order_Shipment_Items</order_shipment_items>
-				</rewrite>
-			</sales>
-			<adminhtml>
-				<rewrite>
-					<sales_order_shipment_view_tracking>Ubercx_Shippingtracking_Block_Adminhtml_Sales_Order_Shipment_View_Tracking</sales_order_shipment_view_tracking>
-				</rewrite>
-			</adminhtml-->
 		</blocks>
   </global>
-	<frontend>
-		<routers>
-			<codshippingbooking>
-				<use>standard</use>
-				<args>
-					<module>Tcs_Codshippingbooking</module>
-					<frontName>codshippingbooking</frontName>
-				</args>
-			</codshippingbooking>
-		</routers>
-		<layout>
-			<updates>
-				<codshippingbooking>
-					<file>codshippingbooking.xml</file>
-				</codshippingbooking>
-			</updates>
-		</layout>
-	</frontend>
 	<admin>
 		<routers>
 			<tcs_codshippingbooking>

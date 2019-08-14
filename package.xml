@@ -1,18 +1,25 @@
 <?xml version="1.0"?>
 <package>
     <name>Tcs_Codshippingbooking</name>
-    <version>0.0.1</version>
-    <stability>devel</stability>
+    <version>0.0.2</version>
+    <stability>stable</stability>
     <license uri="http://opensource.org/licenses/gpl-license">GNU General Public License</license>
     <channel>community</channel>
     <extends/>
-    <summary>TCS COD Shipping Booking Extension</summary>
-    <description>TCS COD Shipping Booking Extension</description>
-    <notes>First release</notes>
+    <summary>TCS C.O.D Shipping Booking and Airway Bill generator.</summary>
+    <description>An extension to the existing Magento based back-ends where store owners are using TCS as their Shipping partners for their C.O.D shipments.&#xD;
+&#xD;
+Extension will help generate Airway Billing prints in PDF and HTML formats required at the order fulfillment last steps, right from the Order Details page, instead of going into C.O.D portal.&#xD;
+&#xD;
+You don't need to an expert at API integration now, just install the extension and the Airway Bills will be just the matter of few clicks.&#xD;
+&#xD;
+For more details, visit our website:&#xD;
+http://www.tcscouriers.com/</description>
+    <notes>Stable release</notes>
     <authors><author><name>TCS</name><user>admin</user><email>kamran.haider@tcs-e.com</email></author></authors>
-    <date>2016-06-17</date>
-    <time>04:26:27</time>
-    <contents><target name="magecommunity"><dir name="Tcs"><dir name="Codshippingbooking"><dir name="Block"><dir name="Adminhtml"><dir name="Sales"><dir name="Order"><dir name="View"><file name="Button.php" hash="73d309c32b68efc18f1bff00fb6c8de6"/><file name="Form.php" hash="f2b43ece7aa8ab106fcb8117256a270c"/></dir></dir></dir></dir></dir><dir name="Helper"><file name="Data.php" hash="7742503fca8a369f8a4e5591a98240a1"/></dir><dir name="Model"><dir name="System"><dir name="Config"><dir name="Source"><dir name="Dropdown"><file name="Print.php" hash="0b58c6f27b9ebab866142a10eda1ff21"/></dir></dir></dir></dir></dir><dir name="controllers"><dir name="Adminhtml"><dir name="Sales"><dir name="Order"><file name="IndexController.php" hash="5c0ea78defd5791733311e7ade8ca82d"/></dir></dir></dir></dir><dir name="etc"><file name="adminhtml.xml" hash="6dc53008db16ff212fffa51b8e48ac3e"/><file name="config.xml" hash="4b47d2c0892208f28ff51668bd67ab4f"/><file name="system.xml" hash="a9624eb190d78f09d63b02550699d3a5"/></dir></dir></dir></target><target name="magedesign"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="layout"><file name="codshippingbooking.xml" hash="a0b50d682dff07c47e83aa2215ada90b"/></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Tcs_Codshippingbooking.xml" hash="e4234e72ec34b7da96bb04ebff57de5f"/></dir></target></contents>
+    <date>2016-06-30</date>
+    <time>12:04:46</time>
+    <contents><target name="magecommunity"><dir name="Tcs"><dir name="Codshippingbooking"><dir name="Block"><dir name="Adminhtml"><dir name="Sales"><dir name="Order"><dir name="View"><file name="Form.php" hash="acddb39828d07a395ab71a0779724142"/><file name="Preview.php" hash="edba33963027a0feea3874df0eca2660"/></dir></dir></dir></dir></dir><dir name="Helper"><file name="Data.php" hash="ca9fbf06ec6cefc5e65d3322d77e18f3"/></dir><dir name="Model"><dir name="System"><dir name="Config"><dir name="Source"><dir name="Dropdown"><file name="Print.php" hash="e15b139fa05ac57faa411df4d712d8c1"/></dir></dir></dir></dir></dir><dir name="controllers"><dir name="Adminhtml"><dir name="Sales"><dir name="Order"><file name="IndexController.php" hash="70554d9d1a70c77d0d2fcf99eb785b8d"/></dir></dir></dir></dir><dir name="etc"><file name="adminhtml.xml" hash="188ae2bb96a106236ebd6d473e7511c5"/><file name="config.xml" hash="8a6e58624676e1f0918b7c078a10c453"/><file name="system.xml" hash="0df8445b85ea8f87ba4ff53cf78616bb"/></dir></dir></dir></target><target name="magedesign"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="layout"><file name="codshippingbooking.xml" hash="e6c0e5744fc265f080e7cb7e33132323"/></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Tcs_Codshippingbooking.xml" hash="e8dd85260393cc1a2fe6278d562beb1f"/></dir></target><target name="magelib"><dir name="Codshippingbooking"><dir name="config"><file name="tcpdf_config_alt.php" hash="e3e5468a80e5f91ec9b0773af9b191b7"/></dir><dir name="fonts"><file name="helvetica.php" hash="2a315fa2593161154c319788f0ef2127"/><file name="helveticab.php" hash="3daad3713df02c15beebd09ceecacacd"/><file name="helveticabi.php" hash="c22fdc8941f2956e0930b20105870468"/><file name="helveticai.php" hash="e0a7f23376f50de631db93814aff2e35"/><file name="times.php" hash="a75033315ee90464410b47cc27ce9ff0"/><file name="timesb.php" hash="ad485022027867116de0bf6c25b1854a"/><file name="timesbi.php" hash="a5f3fbbef1831fe0bcd060edb6e5010b"/><file name="timesi.php" hash="8fd8e9a11cca513a4da0f25ff1a24149"/></dir><dir name="image"><file name="cnlogo.png" hash="d4e078565bf8219f9d7ebf1410c5a2a5"/></dir><dir name="include"><dir name="barcodes"><file name="datamatrix.php" hash="9a29da1e201fb23de4f499adbb9f6a71"/><file name="pdf417.php" hash="3abe66ba8da6b6bf9cf1c6b0e907d51d"/><file name="qrcode.php" hash="f214c50485dc7301cdd70b23e46193a0"/></dir><file name="sRGB.icc" hash="060e79448f1454582be37b3de490da2f"/><file name="tcpdf_colors.php" hash="cacdbe68a428ae36151a3d1152b2b77b"/><file name="tcpdf_filters.php" hash="fb794db6e06fa3cf7479fc889894caf3"/><file name="tcpdf_font_data.php" hash="8f83bbc144d70505672f82679546c72d"/><file name="tcpdf_fonts.php" hash="5f4ae32bd59400b8f788ac644b693ed2"/><file name="tcpdf_images.php" hash="72ef804a6aa7becfeda43428ec55489b"/><file name="tcpdf_static.php" hash="e7527f13aee67945cf001700fba6b00d"/></dir><file name="tcpdf.php" hash="a43db5c9fce068592a794c8580c3fcae"/><file name="tcpdf_autoconfig.php" hash="bcb93bbeb8cf2831e49ff5541d277a1f"/><file name="tcpdf_barcodes_1d.php" hash="d306e9ad7b8b67464493c3281417afdc"/><file name="tcpdf_include.php" hash="d8c7b9c53d87ed407fe35d2c5007b676"/></dir></target><target name="mageskin"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="images"><dir name="codshippingbooking"><file name="cnlogo.png" hash="d4e078565bf8219f9d7ebf1410c5a2a5"/></dir></dir></dir></dir></dir></target></contents>
     <compatible/>
     <dependencies><required><php><min>5.2.0</min><max>7.0.2</max></php></required></dependencies>
 </package>

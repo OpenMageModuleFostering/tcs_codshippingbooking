@@ -3,7 +3,7 @@
     "type": "magento-module",
     "license": "GNU-General-Public-License",
     "homepage": "",
-    "description": "TCS COD Shipping Booking Extension",
+    "description": "TCS C.O.D Shipping Booking and Airway Bill generator.",
     "authors": [
     {
         "name": "TCS",
