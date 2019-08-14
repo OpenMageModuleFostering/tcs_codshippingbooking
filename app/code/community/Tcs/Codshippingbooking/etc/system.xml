@@ -23,7 +23,7 @@
 <config>
   <tabs>
     <tcs translate="label" module="codshippingbooking">
-      <label>TCS COD Shipping Booking</label>
+      <label>TCS C.O.D Shipping Booking</label>
       <sort_order>301</sort_order>
     </tcs>
   </tabs>
@@ -39,7 +39,7 @@
       <tab>tcs</tab>
       <groups>
         <codshippingbooking_settings translate="label">
-          <label>TCS Shipping Booking Settings</label>
+          <label>TCS C.O.D Shipping Booking Settings</label>
           <frontend_type>text</frontend_type>
           <sort_order>1</sort_order>
           <show_in_default>1</show_in_default>
@@ -54,7 +54,6 @@
               <show_in_default>1</show_in_default>
               <show_in_website>0</show_in_website>
               <show_in_store>0</show_in_store>
-              <comment><![CDATA[<a href="" target="_blank">Get your User Key</a>]]></comment>
            	</codshippingbooking_user_key>
 						<codshippingbooking_user_pass translate="label">
               <label>API Password</label>
