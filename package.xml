@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>Tcs_Codshippingbooking</name>
+    <version>0.0.1</version>
+    <stability>devel</stability>
+    <license uri="http://opensource.org/licenses/gpl-license">GNU General Public License</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>TCS COD Shipping Booking Extension</summary>
+    <description>TCS COD Shipping Booking Extension</description>
+    <notes>First release</notes>
+    <authors><author><name>TCS</name><user>admin</user><email>kamran.haider@tcs-e.com</email></author></authors>
+    <date>2016-06-17</date>
+    <time>04:26:27</time>
+    <contents><target name="magecommunity"><dir name="Tcs"><dir name="Codshippingbooking"><dir name="Block"><dir name="Adminhtml"><dir name="Sales"><dir name="Order"><dir name="View"><file name="Button.php" hash="73d309c32b68efc18f1bff00fb6c8de6"/><file name="Form.php" hash="f2b43ece7aa8ab106fcb8117256a270c"/></dir></dir></dir></dir></dir><dir name="Helper"><file name="Data.php" hash="7742503fca8a369f8a4e5591a98240a1"/></dir><dir name="Model"><dir name="System"><dir name="Config"><dir name="Source"><dir name="Dropdown"><file name="Print.php" hash="0b58c6f27b9ebab866142a10eda1ff21"/></dir></dir></dir></dir></dir><dir name="controllers"><dir name="Adminhtml"><dir name="Sales"><dir name="Order"><file name="IndexController.php" hash="5c0ea78defd5791733311e7ade8ca82d"/></dir></dir></dir></dir><dir name="etc"><file name="adminhtml.xml" hash="6dc53008db16ff212fffa51b8e48ac3e"/><file name="config.xml" hash="4b47d2c0892208f28ff51668bd67ab4f"/><file name="system.xml" hash="a9624eb190d78f09d63b02550699d3a5"/></dir></dir></dir></target><target name="magedesign"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="layout"><file name="codshippingbooking.xml" hash="a0b50d682dff07c47e83aa2215ada90b"/></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Tcs_Codshippingbooking.xml" hash="e4234e72ec34b7da96bb04ebff57de5f"/></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.2.0</min><max>7.0.2</max></php></required></dependencies>
+</package>

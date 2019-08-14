@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<layout version="1.0">
+	<adminhtml_sales_order_view>
+		<reference name="head">
+			<action method="addItem">
+					<type>js_css</type>
+					<name>prototype/windows/themes/default.css</name>
+			</action>
+			<action method="addCss">
+					<name>lib/prototype/windows/themes/magento.css</name>
+			</action>
+		</reference>
+		<reference name="order_info">
+			<action method="setTemplate">
+				<template>codshippingbooking/button.phtml</template>
+			</action> 
+		</reference>		
+	</adminhtml_sales_order_view>
+	<tcs_codshippingbooking_adminhtml_sales_order_index_add>
+		<reference name="content">
+				<!--block type="adminhtml/template" name="codshippingbooking_popup" template="codshippingbooking/popup.phtml" /-->
+				<block type="codshippingbooking/adminhtml_sales_order_view_form" name='codshippingbooking_popup' template="codshippingbooking/popup.phtml"></block>
+		</reference>
+		
+		<!--<label>Shipping booking Popup</label>
+		reference name="root">
+			<action method="setTemplate"><template>codshippingbooking/popup.phtml</template></action>
+		</reference-->
+	</tcs_codshippingbooking_adminhtml_sales_order_index_add>
+</layout>

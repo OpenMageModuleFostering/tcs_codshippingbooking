@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/Tcs_Codshippingbooking",
+    "type": "magento-module",
+    "license": "GNU-General-Public-License",
+    "homepage": "",
+    "description": "TCS COD Shipping Booking Extension",
+    "authors": [
+    {
+        "name": "TCS",
+        "email": "kamran.haider@tcs-e.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}
