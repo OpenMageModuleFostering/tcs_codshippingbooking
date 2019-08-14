@@ -214,7 +214,7 @@ class Tcs_Codshippingbooking_Adminhtml_Sales_Order_IndexController extends Mage_
     $data['password'] = Mage::getStoreConfig('codshippingbooking/codshippingbooking_settings/codshippingbooking_user_pass');
 		$outputType = Mage::getStoreConfig('codshippingbooking/codshippingbooking_settings/codshippingbooking_print');
 
-		$client = new SoapClient('http://202.61.51.93:6265/Service1.asmx?wsdl');
+		$client = new SoapClient('http://webapp.tcscourier.com/CODAPI/Service1.asmx?WSDL');
 		$response = $client->InsertData($data);
 		
 		if($this->bigintval($response->InsertDataResult)){
@@ -227,7 +227,7 @@ class Tcs_Codshippingbooking_Adminhtml_Sales_Order_IndexController extends Mage_
 			$order->addStatusHistoryComment('Cn Number - '.$response->InsertDataResult);
 			$order->save();
 			
-			$result = file_get_contents('http://202.61.51.93:6265/cnprn.aspx?cn='.$response->InsertDataResult);
+			$result = file_get_contents('http://webapp.tcscourier.com/CODAPI/cnprn.aspx?cn='.$response->InsertDataResult);
 			
 			//From config check which type of output is selected	
 			if($outputType=='pdf'){
@@ -278,7 +278,7 @@ class Tcs_Codshippingbooking_Adminhtml_Sales_Order_IndexController extends Mage_
 		
 		//echo $print.$html;
 		$message = '<ul class="messages"><li class="success-msg"><ul><li><span>Final output will be open in a new tab/window, so kindly make sure to allow popups.</span></li><li>Please close this window.</li></ul></li></ul>';
-		$html = '<script>window.onload = function() {document.body.innerHTML=\''.$message.'\';};function OpenInNewTab(url) {var win = window.open(url, "_blank");win.focus();}OpenInNewTab("http://202.61.51.93:6265/cnprn.aspx?cn='.$cnNumber.'"); closeAll();</script><style>.messages,.messages ul { font-style:arial; font-size:14px; list-style:none !important; margin:0 !important; padding:0 !important; }.messages { width:100%; overflow:hidden; }.messages li { margin:0 0 10px !important; }.messages li li { margin:0 0 3px !important; }.success-msg{ border-style:solid !important; border-width:1px !important; background-position:10px 9px !important; background-repeat:no-repeat !important; min-height:24px !important; padding:8px 8px 8px 32px !important; font-size:11px !important; font-weight:bold !important; }.success-msg { border-color:#446423; background-color:#eff5ea; background-image:url('.Mage::getDesign()->getSkinUrl('images/success_msg_icon.gif').'); color:#3d6611; }</style>';
+		$html = '<script>window.onload = function() {document.body.innerHTML=\''.$message.'\';};function OpenInNewTab(url) {var win = window.open(url, "_blank");win.focus();}OpenInNewTab("http://webapp.tcscourier.com/CODAPI/cnprn.aspx?cn='.$cnNumber.'"); closeAll();</script><style>.messages,.messages ul { font-style:arial; font-size:14px; list-style:none !important; margin:0 !important; padding:0 !important; }.messages { width:100%; overflow:hidden; }.messages li { margin:0 0 10px !important; }.messages li li { margin:0 0 3px !important; }.success-msg{ border-style:solid !important; border-width:1px !important; background-position:10px 9px !important; background-repeat:no-repeat !important; min-height:24px !important; padding:8px 8px 8px 32px !important; font-size:11px !important; font-weight:bold !important; }.success-msg { border-color:#446423; background-color:#eff5ea; background-image:url('.Mage::getDesign()->getSkinUrl('images/success_msg_icon.gif').'); color:#3d6611; }</style>';
 		echo $html;
 	}
 	

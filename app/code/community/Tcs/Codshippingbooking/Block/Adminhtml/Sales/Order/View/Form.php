@@ -153,7 +153,7 @@ class Tcs_Codshippingbooking_Block_Adminhtml_Sales_Order_View_Form extends Mage_
 	 * @return array
 	 */
 	public function getCities(){
-		$client = new SoapClient('http://202.61.51.93:6265/Service1.asmx?wsdl');
+		$client = new SoapClient('http://webapp.tcscourier.com/CODAPI/Service1.asmx?WSDL');
 		$cities = $client->GetAllCities();
 		
 		$xml = $cities->GetAllCitiesResult->any;
@@ -175,7 +175,7 @@ class Tcs_Codshippingbooking_Block_Adminhtml_Sales_Order_View_Form extends Mage_
 	 * @return array
 	 */
 	public function getAllOriginCities(){
-		$client = new SoapClient('http://202.61.51.93:6265/Service1.asmx?wsdl');
+		$client = new SoapClient('http://webapp.tcscourier.com/CODAPI/Service1.asmx?WSDL');
 		$cities = $client->GetAllOriginCities();
 		
 		$xml = $cities->GetAllOriginCitiesResult->any;
