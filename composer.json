@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/Tcs_Codshippingbooking",
+    "name": "OpenMageModuleFostering\/Tcs_Codshippingbooking",
     "type": "magento-module",
     "license": "GNU-General-Public-License",
     "homepage": "",
     "description": "TCS C.O.D Shipping Booking and Airway Bill generator.",
     "authors": [
-    {
-        "name": "TCS",
-        "email": "kamran.haider@tcs-e.com"
-    }
-],
+        {
+            "name": "TCS",
+            "email": "kamran.haider@tcs-e.com"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
